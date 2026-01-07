@@ -77,6 +77,3 @@ set "BACKUP_DESTINATION=D:\MyBackups"
 * **WinRAR:** You must have WinRAR installed. It is recommended to point the script to `Rar.exe` (the command-line version) usually found in the WinRAR installation folder.
 * **Permissions:** Ensure the script has write access to your `BACKUP_DESTINATION`.
 
----
-
-### Would you like me to help you create a sample `WorkDocuments.txt` profile or an exclusion list to get you started?
