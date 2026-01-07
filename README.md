@@ -4,18 +4,13 @@ batch file w/RAR in order to backup files
 profile-based automation tool for WinRAR. It allows you to manage multiple backup sources with support for **Full** and **Incremental** backups, automatic date/time stamping, and custom exclusion lists.
 
 ---
-
 # WinRAR Batch Backup Automation
-
 A flexible Windows batch script to automate compressed backups using WinRAR. It features dynamic profile selection, exclusion management, and automated incremental/full backup workflows.
-
 ## 🚀 Features
-
 * **Dynamic Profiles:** Automatically detects `.txt` files in the `Scripts/` folder as backup profiles.
 * **Two Backup Modes:**
 * **Full:** Archives all specified files.
 * **Incremental:** Uses the Windows "Archive Attribute" to only back up files that have changed since the last run.
-
 
 * **Automatic Exclusions:** Supports profile-specific exclusion lists (e.g., `Work_exclusion.txt`).
 * **Smart Naming:** Uses WinRAR switches to append timestamps (`YYYYMMDD-HHMMSS`) to filenames automatically.
@@ -23,7 +18,6 @@ A flexible Windows batch script to automate compressed backups using WinRAR. It 
 * **Recovery Records:** Includes a 5% recovery record (`-rr5p`) to protect archives against data corruption.
 
 ## 📁 Directory Structure
-
 Before running the script, organize your files as follows:
 
 ```text
@@ -34,7 +28,6 @@ BackupTool/
 │   └── Photos.txt
 └── Exclusions/              # (Optional) Profile-specific exclusions
     └── WorkDocuments_exclusion.txt
-
 ```
 
 ## ⚙️ Setup & Configuration
@@ -45,7 +38,6 @@ set "WINRAR_PATH=C:\Path\To\Rar.exe"
 set "BACKUP_DESTINATION=D:\MyBackups"
 
 ```
-
 
 2. **Create a Profile:** Create a `.txt` file inside the `Scripts/` folder. Inside this file, list the folders or files you want to back up (one per line).
 3. **Optional Exclusions:** To skip specific files/folders, create a file in `Exclusions/` named `[ProfileName]_exclusion.txt`.
